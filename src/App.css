@@ -1,0 +1,517 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  pointer-events: none;
+  object-fit: cover;
+  width: 30vw !important;
+}
+.App-logo::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar */
+.nav-item {
+  display: inline-block;
+}
+.nav-item.active {
+  -webkit-filter: hue-rotate(10deg);
+  -moz-filter: hue-rotate(10deg);
+  -ms-filter: hue-rotate(10deg);
+  -o-filter: hue-rotate(10deg);
+  filter: hue-rotate(10deg);
+  border-bottom: 2px solid #fe724d;
+}
+.css-7mt4h1-MuiInputBase-root .MuiInputBase-input {
+  padding: 0 !important;
+  padding-left: calc(1em + 32px) !important;
+  height: 1.8em !important;
+}
+
+.css-tnwlqb {
+  border-radius: 17px;
+  border: 1px solid #7d7d7d;
+}
+
+/* search bar */
+
+.css-tnwlqb {
+  max-height: 30px !important;
+}
+.search-bar {
+  padding-right: 60px;
+}
+
+.menu-result {
+  margin-top: 4px;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  background-color: #fff8f0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.menu-result::-webkit-scrollbar {
+  display: none;
+}
+.menu-result .menu-item {
+  height: auto;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.menu-item {
+  text-decoration: none;
+}
+.menu-item:hover {
+  color: white;
+  background-color: #fe724d;
+}
+
+/* Footer */
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 20px !important;
+  background-color: #d9d9d9;
+}
+
+.footer-hover:hover {
+  color: aliceblue;
+}
+
+/* Hero */
+
+.css-11qfo8z-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 15px !important;
+  background-color: #ededed !important;
+}
+
+.hero-image1 {
+  background-image: url("./components/Hero/foood\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  width: 900px;
+  height: 830px;
+  margin-top: -800px;
+  margin-left: 210px;
+}
+.hero-image2 {
+  background-image: url("./components/Hero/foood\ 3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+  position: absolute;
+  width: 400px;
+  height: 968px;
+  left: -50px;
+  top: 350px;
+}
+
+.line::before,
+.line::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.2rem solid #f1592a;
+  width: 10rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.css-1f8e1bt {
+  margin-top: -7px;
+}
+/* our values */
+.circle {
+  min-width: 15vw;
+  height: auto;
+}
+.circle-img {
+  clip-path: circle();
+}
+/* our cooks */
+.css-rz8g59-MuiPaper-root-MuiCard-root {
+  border-radius: 15px !important;
+}
+.rounded {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: -10px;
+}
+.cooks-img1 {
+  background-image: url("./components/OurCooks/piper\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  position: absolute;
+  width: 230px;
+  height: 350px;
+  left: 1720px;
+  top: 1320px;
+}
+.cooks-img2 {
+  background-image: url("./components/OurCooks/domates\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  position: absolute;
+  width: 230px;
+  height: 340px;
+  left: -40px;
+  top: 1350px;
+}
+.cooks-img3 {
+  background-image: url("./components/CountUp/foood\ 4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  position: absolute;
+  width: 690px;
+  height: 649.82px;
+  left: 1386px;
+  top: 2050px;
+}
+.cooks-img4 {
+  background-image: url("./components/CountUp/foood\ 3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  position: absolute;
+  width: 890px;
+  height: 800px;
+  left: -350px;
+  top: 2100px;
+}
+.cooks-img5 {
+  background-image: url("./components/Family/piper\ 4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 132px;
+  height: 230px;
+  left: 1790px;
+  top: 3200px;
+}
+.cooks-img6 {
+  background-image: url("./components/Family/papriche\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 230px;
+  height: 120px;
+  left: 1700px;
+  top: 3400px;
+}
+.cooks-img7 {
+  background-image: url("./components/Family/domates\ 4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 230px;
+  left: -62px;
+  top: 3230px;
+}
+/* Hero-How-It-Works */
+.hero-image3 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/foood\ 3\ \(3\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  position: absolute;
+  width: 400px;
+  height: 968px;
+  left: -500px;
+  top: -550px;
+}
+.hero-image4 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/foood\ 4\ \(2\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  position: absolute;
+  width: 400px;
+  height: 968px;
+  top: -370px;
+  right: -475px;
+}
+.image-why {
+  width: 30vw;
+  height: 30vh;
+  object-fit: cover;
+}
+.mask-box {
+  border-radius: 30px;
+  position: relative;
+  background: #bcbcbc;
+  box-shadow: 1px 1px 2px rgb(165, 165, 165) inset;
+}
+.mask-box .mask {
+  width: 140px;
+  height: 60px;
+  border-radius: 30px;
+  background: #fe724d;
+  position: absolute;
+  box-shadow: 1px 0 2px rgb(165, 165, 165);
+  transition: all 0.5s ease;
+}
+.mask-box .MuiButton-root {
+  border-radius: 20px;
+  width: 120px;
+  height: 60px;
+  transition: all 0.2s 0.1s ease;
+}
+.mask-box .MuiButton-root:hover {
+  opacity: 1;
+}
+/* cooks criteria */
+.hero-image5 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/domates\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  position: absolute;
+  width: 400px;
+  height: 968px;
+  left: -520px;
+  top: -500px;
+}
+.hero-image6 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/piper\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  position: absolute;
+  width: 400px;
+  height: 968px;
+  right: -550px;
+  bottom: 1520px;
+}
+.hero-image7 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/foood\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+
+  position: absolute;
+  width: 500px;
+  height: 968px;
+
+  right: -1013px;
+  top: -150px;
+}
+.img {
+  width: 15vw;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 2px solid #f1592a;
+}
+.badge {
+  position: absolute;
+  border: 1px solid #f1592a;
+  background-color: #f1592a;
+  padding: 3px 9px;
+  border-radius: 38%;
+  color: white;
+  bottom: 270px;
+  left: 272px;
+}
+/* How to become a cook/gurman */
+.png {
+  max-width: 50vw;
+  max-height: 10vh;
+  object-fit: contain;
+}
+.hero-image8 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/foood\ 2\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+
+  position: absolute;
+  width: 500px;
+  height: 968px;
+
+  right: 1100px;
+  top: -400px;
+}
+.hero-image9 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/kromid\ luk.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+
+  position: absolute;
+  width: 400px;
+  height: 968px;
+
+  right: -520px;
+  top: -250px;
+  opacity: 0.8;
+}
+
+/* FAQ */
+.css-k4y2a1-MuiPaper-root-MuiAccordion-root:first-of-type {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+.css-k4y2a1-MuiPaper-root-MuiAccordion-root:last-of-type {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+/* accordion */
+
+.hero-image11 {
+  background-image: url("./components/HowItWorksPage/Cooks/img/decor.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+
+  object-fit: cover;
+
+  width: 127vw;
+  height: 83vh;
+
+  margin-left: -650px;
+
+  margin-top: -150px;
+
+  opacity: 0.8;
+}
+/* Menu Page */
+/* Filters top */
+.slider-container {
+  overflow: hidden;
+  margin-left: 410px;
+  margin-right: 200px;
+}
+.slider {
+  animation: moveright 20s linear infinite;
+}
+.center img {
+  min-width: 150px;
+}
+@keyframes moveright {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Calendar */
+.space {
+  padding-right: 10px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Filters left */
+.select {
+  max-width: 16vw;
+  max-height: 4vh;
+}
+
+.css-nnid7-MuiSlider-valueLabel {
+  background-color: darkorange !important;
+}
+.badge-white {
+  border: 1px solid #f1592a;
+  background-color: white;
+  min-width: 3.8vw;
+  border-radius: 17px;
+  text-align: center;
+  color: #f1592a;
+  bottom: 175px;
+  left: 272px;
+}
+
+.ship img {
+  max-width: 80%;
+  height: auto;
+}
+.bg-active {
+  background-color: rgb(255, 198, 128);
+  color: white;
+}
+
+/* Card Menu Page */
+.img-card {
+  margin-top: -35px;
+}
+.rounded2 {
+  border-top-left-radius: 35% !important;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  border-radius: 17px;
+}
+.bg-img img {
+  width: 100%;
+  height: auto;
+}
+
+.img-card-two {
+  max-width: 100%;
+  max-height: auto;
+}
+.img-card-three {
+  max-width: 100%;
+  max-height: 50%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover;
+}
+
+/* cooks detail page */
+.cook-img {
+  min-width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+}
+.message {
+  border: 1px solid #f1592a;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* calendar */
+.today p {
+  margin: 0;
+  color: #f1592a;
+  padding-top: 4px;
+  padding-bottom: 4px;
+ 
+}
+.space p {
+  margin: 0;
+}
+

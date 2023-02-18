@@ -1,0 +1,815 @@
+{
+  "cooks": [
+    {
+      "id": "1",
+      "avatar": "/img/CardMenuPage/woman1.jpg",
+      "image": "https://th.bing.com/th/id/R.35821cc37eb1e1929935880193dd8723?rik=kxqz3CTkjXsj6g&riu=http%3a%2f%2ffc04.deviantart.net%2ffs70%2fi%2f2011%2f273%2f5%2f5%2fautumn_by_bionic_woman-d4be3b6.jpg&ehk=p18Q82ZLtzapB0u8aICvVgCDY%2fBbStyCdRgzWk4LjLk%3d&risl=&pid=ImgRaw&r=0",
+      "img": "https://th.bing.com/th/id/R.1990d4772126151e1f882163643be1f1?rik=PWQGx9535TpqgA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-NXhpJ18DZaA%2fT2R9q4mjJfI%2fAAAAAAAABxQ%2fB8F_C5Gfu-g%2fs1600%2fall%2bfood.jpg&ehk=iMGSfBs0ajodcXcbaxTxk3ikslemZB%2fE0WII2Wwb9Jk%3d&risl=&pid=ImgRaw&r=0",
+      "first_name": "Софија",
+      "last_name": "Софијанова",
+      "description": "Специјализирана за традиционална храна",
+      "about_me": "Израснав со традиционална храна која секојдневно ни ја подготвуваше мајка ми. Оттаму и мојата љубов и желба да ја продолжам фамилијарната традиција, притоа додавајќи намирници и зачини кои доловуваат уникатен вкус на секој оброк кој го приготвувам.",
+      "phone": "+389 11 111 111",
+      "comments": "23 коментари",
+      "food_type_one": "Мексиканска",
+      "food_type_two": "Кинеска",
+      "food_type_three": "Традиционална",
+      "button_title_one": "Дознај повеќе",
+      "button_title_two": "Прати порака",
+      "icon": "/img/Card/home.png",
+      "food_icon": "/img/CardMenuPage/curry (1).png",
+      "stars": 4
+    },
+    {
+      "id": "2",
+      "avatar": "/img/CardMenuPage/men.jpg",
+      "image": "/img/unsplash_YSfEC5DSy08.png",
+      "first_name": "Јован",
+      "last_name": "Мирковски",
+      "description": "Специјализиран за италијанска храна",
+      "about_me": "Италијанската храна е моја пасија. Уживам во готвењето на овој прекрасен производ на италијанскиот народ.",
+      "phone": "+389 11 111 111",
+      "comments": "56 коментари",
+      "food_type_one": "Вегетаријанска",
+      "food_type_two": "Италијанска",
+      "food_type_three": "Традиционална",
+      "button_title_one": "Дознај повеќе",
+      "button_title_two": "Прати порака",
+      "icon": "/img/Card/home.png",
+      "food_icon": "/img/CardMenuPage/curry (1).png",
+      "stars": 4
+    },
+    {
+      "id": "3",
+      "avatar": "/img/CardMenuPage/woman2.jpg",
+      "image": "/img/unsplash_YSfEC5DSy08.png",
+      "first_name": "Марија",
+      "last_name": "Климентиновска",
+      "description": "Специјализирана за медитеранска храна",
+      "about_me": "По неколку години патување по медитеранот, станав вистински шеф за медитеранска храна.",
+      "phone": "+389 11 111 111",
+      "comments": "78 коментари",
+      "food_type_one": "Вегетаријанска",
+      "food_type_two": "Медитеранска",
+      "food_type_three": "Морска",
+      "button_title_one": "Дознај повеќе",
+      "button_title_two": "Прати порака",
+      "icon": "/img/Card/home.png",
+      "food_icon": "/img/CardMenuPage/curry (1).png",
+      "stars": 5
+    }
+  ],
+  "menu": [
+    {
+      "id": "1",
+      "name": "Скара и компири",
+      "meal": "оброк",
+      "available": "веднаш",
+      "price": 450,
+      "image": "https://th.bing.com/th/id/R.cb95fe272c89f5b38b6d03ac089985a8?rik=%2fyUNLTHWCLR3KA&riu=http%3a%2f%2fwww.gasbarbeques.org.uk%2fwp-content%2fuploads%2f2012%2f01%2fmeatbbq.jpg&ehk=1MQXE5gLi4yRz%2btk57Jmqk9mQnC9K0MFvN9iNI9YZ3I%3d&risl=&pid=ImgRaw&r=0",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "мед",
+      "delivery_icon": "./img/CardMenuPage/Group 241.png",
+      "delivery": "yes",
+      "time_to_prep": "1 час",
+      "cookId": "1",
+      "cook_avatar": "/img/CardMenuPage/woman1.jpg",
+      "reviews": 4,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Maja",
+          "comment": "Скарата беше многу вкусна. Дефинитивно ќе порачам повторно",
+          "stars": 3
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "name": "Ќофтиња",
+      "price": 215,
+      "meal": "оброк",
+      "available": "утре",
+      "image": "https://th.bing.com/th/id/OIP.Svqevw5LpT_IXq44u1ZW8QHaHM?pid=ImgDet&rs=1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "40 мин",
+      "cookId": "2",
+      "cook_avatar": "/img/CardMenuPage/men.jpg",
+      "reviews": 5,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Кирил",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Свинско динстано",
+      "meal": "оброк",
+      "available": "по порачка",
+      "price": 110,
+      "image": "/img/CardMenuPage/Rectangle 324.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "no",
+      "time_to_prep": "2 часа",
+      "cookId": "3",
+      "cook_avatar": "/img/CardMenuPage/woman2.jpg",
+      "reviews": 4,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Ванчо",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Телешко динстано",
+      "meal": "оброк",
+      "available": "утре",
+      "price": 780,
+      "image": "/img/CardMenuPage/Rectangle 324.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "2 часа",
+      "cookId": "3",
+      "cook_avatar": "/img/CardMenuPage/woman2.jpg",
+      "reviews": 4,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Ванчо",
+          "comment": "Добро е! Повторно ќе порачам повторно!",
+          "stars": 3
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Пилешко печено",
+      "meal": "оброк",
+      "available": "утре",
+      "price": 810,
+      "image": "/img/CardMenuPage/Rectangle 324.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "no",
+      "time_to_prep": "2 часа",
+      "cookId": "3",
+      "cook_avatar": "/img/CardMenuPage/woman2.jpg",
+      "reviews": 4,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Ванчо",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Печурки манџа",
+      "meal": "чорби",
+      "available": "по порачка",
+      "price": 110,
+      "image": "/img/CardMenuPage/Rectangle 324.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "2 часа",
+      "cookId": "3",
+      "cook_avatar": "/img/CardMenuPage/woman2.jpg",
+      "reviews": 4,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Ванчо",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Бургер",
+      "meal": "бургер",
+      "available": "веднаш",
+      "price": 210,
+      "image": "/img/CardMenuPage/Rectangle 324.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "2 часа",
+      "cookId": "1",
+      "cook_avatar": "/img/CardMenuPage/woman1.jpg",
+      "reviews": 3,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Ванчо",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Бургер со кашкавал и сланина",
+      "meal": "бургер",
+      "available": "веднаш",
+      "price": 310,
+      "image": "/img/CardMenuPage/Rectangle 324.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "лактоза",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "no",
+      "time_to_prep": "2 часа",
+      "cookId": "2",
+      "cook_avatar": "/img/CardMenuPage/men.jpg",
+      "reviews": 4,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Ванчо",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Супа со зеленчук",
+      "meal": "чорби",
+      "available": "утре",
+      "price": 110,
+      "image": "/img/CardMenuPage/Rectangle 324.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "пченица",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "2 часа",
+      "cookId": "2",
+      "cook_avatar": "/img/CardMenuPage/men.jpg",
+      "reviews": 3,
+      "button_title": "Додај во кошничка",
+      "reviewsList_id": 0,
+      "reviewsList_author": "Ванчо",
+      "reviewsList_comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+      "reviewsList_stars": 5
+    },
+    {
+      "id": "10",
+      "name": "Салата со брокула",
+      "meal": "салата",
+      "available": "веднаш",
+      "price": 300,
+      "image": "https://th.bing.com/th/id/R.107a63b8a8c50c2f577db7f31603cf14?rik=4LDQF7quAgf2oA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-WGKudmXuEW4%2fTn3nBPwBlYI%2fAAAAAAAABl8%2fpaa5HdIEKt8%2fs1600%2fIMG_5186.JPG&ehk=fAR7vdJl%2bzWB7D4Jz%2fnK%2bH2Ze3uJKC%2bZDBC0bEART08%3d&risl=&pid=ImgRaw&r=0",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "пченица",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "30 мин",
+      "cookId": "1",
+      "cook_avatar": "/img/CardMenuPage/woman1.jpg",
+      "reviews": 5,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Филип",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Шопска салата",
+      "meal": "салата",
+      "available": "веднаш",
+      "price": 100,
+      "image": "/img/CardMenuPage/Rectangle 333.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "лактоза",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "no",
+      "time_to_prep": "30 мин",
+      "cookId": "2",
+      "cook_avatar": "/img/CardMenuPage/men.jpg",
+      "reviews": 5,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Maja",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Витаминска салата",
+      "meal": "салата",
+      "available": "утре",
+      "price": 200,
+      "image": "/img/CardMenuPage/Rectangle 339.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "30 мин",
+      "cookId": "3",
+      "cook_avatar": "/img/CardMenuPage/woman2.jpg",
+      "reviews": 3,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Maja",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Гурабии",
+      "meal": "десерт",
+      "available": "утре",
+      "price": 105,
+      "image": "/img/CardMenuPage/Rectangle 342.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "јатки",
+      "delivery_icon": "/img/CardMenuPage/Group 241.png",
+      "delivery": "yes",
+      "time_to_prep": "2 часа",
+      "cookId": "1",
+      "cook_avatar": "/img/CardMenuPage/woman1.jpg",
+      "reviews": 4,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Сања",
+          "comment": "Гурабии од моите соништа!",
+          "stars": 4
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Обланди",
+      "meal": "десерт",
+      "available": "веднаш",
+      "price": 150,
+      "image": "/img/CardMenuPage/Rectangle 345.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "чоколадо",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "yes",
+      "time_to_prep": "30 мин",
+      "cookId": "2",
+      "cook_avatar": "/img/CardMenuPage/men.jpg",
+      "reviews": 5,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Александар",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Баклава",
+      "meal": "десерт",
+      "available": "по порачка",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi, iste, ipsum blanditiis?",
+      "price": 200,
+      "image": "/img/CardMenuPage/Rectangle 348.png",
+      "ingridients": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "nutrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio in perspiciatis repudiandae quae ducimus eligendi quos deleniti quisquam repellat veniam aut perferendis vero culpa consectetur commodi.",
+      "alergies": "Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.",
+      "alergeni": "глутен",
+      "delivery_icon": "/img/CardMenuPage/Group 239.png",
+      "delivery": "no",
+      "time_to_prep": "2 часа",
+      "cookId": "3",
+      "cook_avatar": "/img/CardMenuPage/woman2.jpg",
+      "reviews": 5,
+      "button_title": "Додај во кошничка",
+      "reviewsList": [
+        {
+          "id": 0,
+          "author": "Олгица",
+          "comment": "Преубаво! Дефинитивно ќе порачам повторно!",
+          "stars": 4
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id":"12",
+      "cookId":"1",
+      "date": "2.17.2023",
+      "time": "12:00",
+      "meal": "бургер"
+    },
+    {
+      "id": "13",
+      "cookId": "2",
+      "day": "Четврток",
+      "date": "2.27.2023",
+      "time": "12:00",
+      "meal": "сарма"
+    },
+    {
+      "id":"14",
+      "cookId":"3",
+      "day": "Вторник",
+      "date": "2.25.2023",
+      "time": "12:00",
+      "meal": "полнети пиперки"
+    },
+    {
+      "id":"15",
+      "cookId":"3",
+      "day": "Вторник",
+      "date": "3.25.2023",
+      "time": "12:00",
+      "meal": "печени компири со печурки"
+    },
+    {
+      "id":"16",
+      "cookId":"3",
+      "day": "",
+      "date": "3.15.2023",
+      "time": "12:00",
+      "meal": "печурки со зеленчук"
+    },
+    {
+      "id":"17",
+      "cookId":"3",
+      "day": "",
+      "date": "3.05.2023",
+      "time": "12:00",
+      "meal": "печурки со зеленчук"
+    }
+  ],
+
+  "customers": [
+    {
+      "id": "1",
+      "img_one": "https://i.pinimg.com/736x/f9/d5/70/f9d570a95b0c710fd591b4a239e9890a.jpg",
+      "comment": "Највкусната домашна храна што сум ја пробала! Едвај чекам да пробам уште многу вкусни јадења.",
+      "first_name": "Мила",
+      "last_name": "Крстева",
+      "age": "32"
+    },
+    {
+      "id": "2",
+      "img_one": "https://img.freepik.com/free-photo/positive-carefree-woman-with-curly-hair-dressed-hoodie-smiles-happily-makes-peace-gesture-takes-selfie-urban-place-being-good-mood-after-sport-training-people-emotions-sporty-lifestyle_273609-59906.jpg?w=2000",
+      "comment": "Јади домашно е најдобро нешто од мојот студентски живот во Скопје!.",
+      "first_name": "Лара",
+      "last_name": "Миланова",
+      "age": "22"
+    },
+    {
+      "id": "3",
+      "img_one": "https://guycounseling.com/wp-content/uploads/2017/04/attractive-man.jpg",
+      "comment": "Ни еден ресторан не може да го замени вкусот на домашно тавче гравче. Браво Јади домашно!!!",
+      "first_name": "Миле",
+      "last_name": "Венковски",
+      "age": "40"
+    }
+  ],
+  "banner_content": {
+    "title": "Јади домашно",
+    "logo": "./img/logo-jadi-domasno 1.png",
+    "img": "./img/tavce gravce.png",
+    "hero_image_one": "./components/Hero/foood 2.png",
+    "hero_image_two": "./components/Hero/foood 3.png",
+    "subTitle": "Вкусот на твоето соседство!",
+    "button_title": "Погледни резултати"
+  },
+
+  "our_values": [
+    {
+      "id": "100",
+      "img_one": "./img/handshake.webp",
+      "subTitle": "Поврзување!",
+      "text": "Вистински луѓе. Автентична љубов."
+    },
+    {
+      "id": "200",
+      "img_one": "./img/friends-eating.webp",
+      "subTitle": "Споделување на радост!",
+      "text": "Уживај во заедницата преку храна."
+    },
+    {
+      "id": "300",
+      "img_one": "./img/cooking-stove.jpg",
+      "subTitle": "Кулинарски можности!",
+      "text": "Зајакнување на домашните готвачи."
+    }
+  ],
+
+  "family": {
+    "image_one": "./img/Group 132.png",
+    "title": "Стани дел од семејството Јади Домашно",
+    "image_two": "./img/Group 135.png",
+    "text_one": "Сакам да нарачувам храна",
+    "text_two": "Сакам да станам готвач"
+  },
+  "register": [
+    {
+      "id": "1a",
+      "image_one": "./img/carbon_user-favorite-alt.png",
+      "text_one": "Регистрирај се на платформата како клиент!",
+      "image_two": "./img/image 41.png",
+      "text_two": "Одбери дали сакаш веќе подготвена храна или одбери датум на кој сакаш да ти биде подготвена.",
+      "image_three": "./img/image 42.png",
+      "text_three": "Нарачај брзо и лесно преку нашата платформа!",
+      "image_four": "./img/image 43.png",
+      "text_four": "Подигни ја нарачката и уживај во вкусот на домашната храна.",
+      "button_title": "Стани клиент"
+    },
+    {
+      "id": "2b",
+      "image_one": "./img/carbon_user-favorite-alt.png",
+      "text_one": "Регистрирај се на платформата како готвач!",
+      "image_two": "./img/image 41.png",
+      "text_two": "Пополни го целосно твојот профил.",
+      "sub_text": "Прочитај повеќе информации за средување на твојот профил тука.",
+      "image_three": "./img/image 42.png",
+      "text_three": "Примај нарачки и готви вкусни јадења!",
+      "image_four": "./img/image 43.png",
+      "text_four": " Испорачувај ги твоите нарачки и заработи.",
+      "button_title": "Стани готвач"
+    }
+  ],
+
+  "how_it_works_banner": {
+    "title": "Како функционира?",
+    "logo": "./img/logo-jadi-domasno 1.png",
+    "image_one": "./components/HowItWorksPage/Cooks/img/foood 3 (3).png",
+    "image_two": "./components/HowItWorksPage/Cooks/img/foood 4 (2).png",
+    "button_title_one": "Готвачи",
+    "button_title_two": "Гурмани"
+  },
+
+  "why_to_become_a_cook": [
+    {
+      "id": "1aa",
+      "image": "https://www.pngitem.com/pimgs/m/161-1614362_girl-money-png-transparent-png.png",
+      "subTitle": "Заработи чесно",
+      "text": "Сосема е бесплатна за аплицирање.Многу готвачи заработуваат околу 5000 денари неделно."
+    },
+    {
+      "id": "2aa",
+      "image": "https://www.helpguide.org/wp-content/uploads/cooking-hotpot.jpg",
+      "subTitle": "Биди готвач",
+      "text": "Дизајнирајте сопствено мени, поставете свои цени и работете кога сакате.Ќе ви помогнеме со плаќање, логистика и поддршка на клиентите."
+    },
+    {
+      "id": "3aa",
+      "image": "https://business.getonbloc.com/wp-content/uploads/2020/09/restaurant-customer-service1.jpg",
+      "subTitle": "Послужи среќни клиенти",
+      "text": "Добијте можност да ги зготвите вашите омилени рецепти и со тоа да усреќите гурмани кои секогаш сакаат да пробаат нешто ново."
+    }
+  ],
+  "why_to_become_gurman": [
+    {
+      "id": "1",
+      "image": "https://media.istockphoto.com/id/1146026045/photo/group-of-happy-friends-having-a-lunch-in-a-tavern.jpg?s=612x612&w=0&k=20&c=8t5jGI-q8Z_THR6ygjpKl3JU3SYRVudvOeGnaNQa_cA=",
+      "subTitle": "Поврзување!",
+      "text": "Вистински луѓе. Автентична љубов."
+    },
+    {
+      "id": "2",
+      "image": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFwcHklMjBmcmllbmRzfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "subTitle": "Споделување на радост!",
+      "text": "Уживај во заедницата преку храна."
+    },
+    {
+      "id": "3",
+      "image": "https://media.istockphoto.com/id/1165063882/photo/restaurant-healthy-food-delivery-in-take-away-boxes.jpg?s=612x612&w=0&k=20&c=IOC4sN-T-cCobmHE13NY_ml27Us6VK81SdTpdoFO2uw=",
+      "subTitle": "Кулинарски можности!",
+      "text": "Зајакнување на домашните готвачи."
+    }
+  ],
+  "cooks-criteria": [
+    {
+      "id": "1",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kips-bay-dallas-2021-kitchen-studio6f-1632327008.jpg?crop=0.716xw:1.00xh;0.155xw,0&resize=640:*",
+      "text": "Вашата кујна треба да биде чиста и уредна!"
+    },
+    {
+      "id": "2",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/meal-prep-index-1566932947.png",
+      "text": "Намирниците со кои ја готвите храната треба да се истите што се наведени во вашето мени!"
+    },
+    {
+      "id": "3",
+      "image": "https://news.berkeley.edu/wp-content/uploads/2020/03/handwashing750.jpg",
+      "text": " Секогаш треба да ги измиете рацете темелно, пред да започнете со подготвување оброци!"
+    },
+    {
+      "id": "4",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/refrigerator-full-of-food-royalty-free-image-1596641208.jpg",
+      "text": "Намирниците треба да се чуваат во соодветни услови! Проверувајте го редовно рокот пред да почнете да готвите."
+    },
+    {
+      "id": "5",
+      "image": "https://i.etsystatic.com/36287072/r/il/132cc3/4371645074/il_fullxfull.4371645074_hfdp.jpg",
+      "text": "Нека вашите миленичиња ве почекаат надвор од кујната. Некои клиенти не сакаат кога се готви во присуство на домашно милениче!"
+    },
+    {
+      "id": "6",
+      "image": "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/2022-07/restaurantcustomerservice.jpg?itok=tVfMs6oY",
+      "text": "Бидете секогаш проферсионални и пријателски насочени кон клиентите кои нарачуваат храна од вас!"
+    },
+    {
+      "id": "7",
+      "image": "https://i.pngimg.me/thumb/f/720/6035473801674752.jpg",
+      "text": "Ние сме едно големо семејство! Секогаш обидете се несогласувањата да ги решите директно со вашите клиенти.Сослушајте ги нивните критики - тоа ќе ве направи подобар готвач!"
+    }
+  ],
+
+  "how_to_become_cook": [
+    {
+      "id": "1cc",
+      "image": "./img/undraw_reminder_re_fe15 1.png",
+      "subTitle": "Добијте одобрение за готвење",
+      "text": " Регистрирај се. Прочитајте и пополнете регулативи за безбедност на храната и изберете го вашето мени со јадења."
+    },
+    {
+      "id": "2cc",
+      "image": "./img/undraw_articles_wbpb.png",
+      "subTitle": "Изберете го вашиот распоред",
+      "text": "Изберете ги деновите што сакате да ги готвите.Малку или колку што сакате."
+    },
+    {
+      "id": "3cc",
+      "image": "./img/undraw_cooking_re_g99p.png",
+      "subTitle": "Подгответе ги вашите нарачки",
+      "text": "Клиентите можат да почнат да нарачуваат од вас на платформата. Освен за нарачки спремни веднаш за во текот на денот, тие ќе нарачаат барем еден ден однапред за да имате доволно време да ги набавите состојките и да ги подготвите нивните јадења."
+    },
+    {
+      "id": "4cc",
+      "image": "./img/undraw_delivery_address_re_cjca.png",
+      "subTitle": "Подгответе ги за испорака",
+      "text": "Откако ќе ја подготвите нарачката, известете го клиентот дека истата е спремна за достава."
+    },
+    {
+      "id": "5cc",
+      "image": "./img/undraw_takeout_boxes_ap54.png",
+      "subtitle": "Услужете ги вашите клиенти",
+      "text": "Ќе ви помогнеме да го идентификувате најдобриот достапен метод за испорака за вашите клиенти да можат безбедно и навреме да ја добијат храната."
+    }
+  ],
+  "how_to_become_gurman": [
+    {
+      "id": "1",
+      "image": "./img/undraw_reminder_re_fe15 1.png",
+      "subTitle": "Регистрирај се на платформата како гурман!",
+      "text": " Регистрирај се! Со ова веќе станувате дел од нашето семејство и имате профил на гурман.."
+    },
+    {
+      "id": "2",
+      "image": "./img/undraw_articles_wbpb.png",
+      "subTitle": "Нарачајте брзо и лесно!",
+      "text": "Разгледајте ги нашите готвачи, менито кое што го нудат и одберете храна по ваш вкус.."
+    },
+    {
+      "id": "3",
+      "image": "./img/undraw_takeout_boxes_ap54.png",
+      "subtitle": "Јадете домашно!",
+      "text": "Со Достава или подигнување - ваш избор! Уживајте во вкусот на домашно приготвена храна од нашите незаменливи готвачи."
+    }
+  ],
+
+  "thank_u_and_welcome": {
+    "title": "Ви благодариме и добредојдовте!",
+    "text_cooks": "Ви посакуваме успешна работа, многу готвење и споделување убави моменти со храната!",
+    "text_gurmans": "Ви посакуваме уживање во храната од нашите готвачи и споделување убави моменти во соседството!",
+    "button_title": "Регистрирај се"
+  },
+  "faq": {
+    "title": "Најчесто поставувани прашања",
+    "subTitle_one": " 1. Како да се регистрирам?",
+    "text_one": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    "subTitle_two": "2. Како да променам коментар?",
+    "text_two": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    "subTitle_three": "3. Како да променам веќе објавена слика на рецепт?",
+    "text_three": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    "subTitle_four": "4. Како да променам веќе објавена слика на рецепт?",
+    "text_four": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    "subTitle_five": "5. Како да променам веќе објавена слика на рецепт?",
+    "text_five": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+  },
+
+  "part_of": [
+    {
+      "id": "1dd",
+      "image": "./img/GurmansPartOf/undraw_reminder_re_fe15 1(1).png",
+      "title": "Регистрирај се на платформата како гурман!",
+      "text": "Регистрирај се! Со ова веќе станувате дел од нашето семејство и имате профил на гурман."
+    },
+    {
+      "id": "2dd",
+      "image": "./img/GurmansPartOf/undraw_articles_qbpb(1).png",
+      "title": "Нарачајте брзо и лесно!",
+      "text": "Разгледајте ги нашите готвачи, менито кое што го нудат и одберете храна по ваш вкус."
+    },
+    {
+      "id": "3dd",
+      "image": "./img/GurmansPartOf/undraw_takeout_boxes_ap54(1).png",
+      "title": "Јадете домашно!",
+      "text": "Со достава или подигнување - ваш избор! Уживајте во вкусот на домашно приготвена храна од нашите незаменливи готвачи."
+    }
+  ],
+
+  "filtersTop": {
+    "icon_one": "./img/FiltersTop/akar-icons_circle-chevron-down-fill.png",
+    "icon_two": "./img/FiltersTop/Group 225.png",
+    "icon_three": "./img/FiltersTop/Group 226.png",
+    "icon_four": "./img/FiltersTop/Group 227.png",
+    "icon_five": "./img/FiltersTop/Group 228.png",
+    "icon_six": "./img/FiltersTop/Group 229.png",
+    "icon_seven": "./img/FiltersTop/Group 13937.png",
+    "icon_eight": "./img/FiltersTop/Group 231.png",
+    "icon_nine": "./img/FiltersTop/akar-icons_circle-chevron-down-fill (1).png"
+  }
+}
