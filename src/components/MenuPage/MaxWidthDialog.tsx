@@ -9,6 +9,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import {
   Avatar,
   CardMedia,
+  Grid,
   Link,
   Paper,
   Rating,
@@ -26,8 +27,6 @@ export default function MaxWidthDialog({ data }: Props) {
   const [open, setOpen] = React.useState(false);
   const [fullWidth] = React.useState(true);
   const [maxWidth] = React.useState<DialogProps["maxWidth"]>("sm");
-
-  // const {cooks} = useContext(CooksContext)
 
   const [value] = React.useState<number | null>(4);
   const [count, setCount] = useState(1);
@@ -61,70 +60,122 @@ export default function MaxWidthDialog({ data }: Props) {
             <img src={data.image} alt="food" />
           </Box>
           <DialogContentText>
-            <Box display={"flex"} alignItems={"center"}>
-              <Box>
-                <Typography id="modal-modal-title" variant="h5" component="h2">
+            <Grid container>
+              <Grid item xs={6}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
                   {data.name}
                 </Typography>
-                <Typography id="modal-modal-description">{}</Typography>
-              </Box>
-              <Box ml={12}>
-                <Button
-                  size="small"
-                  variant="outlined"
-                  sx={{
-                    minHeight: "25px",
-                    minWidth: "8vw",
-                    borderRadius: "20px",
-                    textTransform: "capitalize",
-                    fontWeight: "500",
-                    fontSize: "11px",
-                    color: "white",
-                    backgroundColor: "#f1592a",
-                    borderColor: "#EF7204",
-                    ":hover": {
-                      color: "#EF7200",
-                      borderColor: "#EF7200",
-                    },
-                  }}
+              </Grid>
+              <Grid item xs={6}>
+                <Box
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"flex-end"}
                 >
-                  Прати порака
-                </Button>
-              </Box>
-            </Box>
+                  <Button
+                    size="small"
+                    variant="outlined"
+                    sx={{
+                      borderRadius: "20px",
+                      textTransform: "capitalize",
+
+                      fontSize: "11px",
+                      color: "white",
+                      backgroundColor: "#f1592a",
+                      borderColor: "#EF7204",
+                      ":hover": {
+                        color: "#EF7200",
+                        borderColor: "#EF7200",
+                      },
+                    }}
+                  >
+                    Прати порака
+                  </Button>
+                </Box>
+              </Grid>
+              {/* </Box> */}
+            </Grid>
             <Box>
               <Box display={"flex"} alignItems={"center"}>
                 <img src="./img/CardMenuPage/curry.png" alt="food" />
-                <Typography>Традиционално</Typography>
-                <Box ml={2}>
+                <Typography
+                  sx={{
+                    fontSize: {
+                      xs: ".8rem",
+                      sm: "1rem",
+                    },
+                  }}
+                >
+                  Традиционално
+                </Typography>
+                <Box
+                  sx={{
+                    marginLeft: {
+                      xs: "5px",
+                      sm: 2,
+                    },
+
+                    flexShrink: 0,
+                  }}
+                >
                   <img src="./img/CardMenuPage/Group 16.png" alt="food" />
                   <img src="./img/CardMenuPage/Group 16.png" alt="food" />
                   <img src="./img/CardMenuPage/Group 18.png" alt="food" />
                 </Box>
-                <Typography ml={2}>Малку луто</Typography>
+                <Typography
+                  sx={{
+                    fontSize: {
+                      xs: ".8rem",
+                      sm: "1rem",
+                    },
+                    marginLeft: {
+                      xs: "5px",
+                      sm: 2,
+                    },
+                  }}
+                >
+                  Малку луто
+                </Typography>
               </Box>
             </Box>
           </DialogContentText>
-          <Paper sx={{ backgroundColor: "#EBEBEB" }}>
+          <Paper sx={{ backgroundColor: "#EBEBEB", minWidth: "100%" }}>
             <Box
               display={"flex"}
               alignItems={"center"}
               justifyContent={"center"}
             >
-              <Box mr={6} pt={1} pb={1}>
+              <Box pt={1} pb={1}>
                 <Avatar
                   alt="cook"
                   src={data.cook_avatar}
-                  sx={{ width: 100, height: 100 }}
+                  sx={{
+                    width: {
+                      xs: 50,
+                      sm: 100,
+                    },
+                    height: {
+                      xs: 50,
+                      sm: 100,
+                    },
+                    marginRight: {
+                      xs: 0,
+                      sm: 10,
+                    },
+                  }}
                 />
               </Box>
-              <Box ml={6}>
+              <Box
+                sx={{
+                  marginLeft: {
+                    xs: "10px",
+                    sm: 4,
+                  },
+                }}
+              >
                 <Typography variant="h6">{}</Typography>
                 <Typography>Специјализиран/а по </Typography>
                 <Typography>+389 78 55-0-13</Typography>
-              </Box>
-              <Box ml={6}>
-                <img src={"./img/CardMenuPage/Group 19.png"} alt="arrow" />
               </Box>
             </Box>
           </Paper>
@@ -133,7 +184,16 @@ export default function MaxWidthDialog({ data }: Props) {
           </Box>
           <Box display={"flex"}>
             <Box mt={3}>
-              <Typography>Одбери датум и време на нарачка:</Typography>
+              <Typography
+                sx={{
+                  fontSize: {
+                    xs: "0.8rem",
+                    sm: "1rem",
+                  },
+                }}
+              >
+                Одбери датум и време на нарачка:
+              </Typography>
             </Box>
 
             <Box>
@@ -144,32 +204,37 @@ export default function MaxWidthDialog({ data }: Props) {
           <Box mt={2}>
             <hr />
           </Box>
-          <Box display={"flex"} mt={4}>
-            <Box>
-              <Typography>Одбери количина</Typography>
-              <Typography variant="body2">Достапни 4 порции</Typography>
-            </Box>
-            <Paper
-              sx={{
-                marginLeft: 25,
-                borderRadius: 10,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundColor: "#FFF8F0",
-              }}
-            >
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                justifyContent={"center"}
+          <Grid container>
+            <Grid item xs={6}>
+              <Typography mt={1.5}>Одбери количина</Typography>
+            </Grid>
+            <Grid item xs={6}>
+              <Paper
+                sx={{
+                  borderRadius: 10,
+                  backgroundColor: "#FFF8F0",
+                  width: "100%",
+                  maxWidth: "80%",
+                  marginTop: 1,
+                  flexShrink: 0,
+                }}
               >
-                <Button onClick={() => setCount(count + 1)}>+</Button>
-                <Typography>{count}</Typography>
-                <Button onClick={() => setCount(count - 1)}>-</Button>
-              </Box>
-            </Paper>
-          </Box>
+                <Box
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                >
+                  <Button disableRipple onClick={() => setCount(count + 1)}>
+                    +
+                  </Button>
+                  <Typography>{count}</Typography>
+                  <Button disableRipple onClick={() => setCount(count - 1)}>
+                    -
+                  </Button>
+                </Box>
+              </Paper>
+            </Grid>
+          </Grid>
 
           <Box mt={2}>
             <hr />
@@ -218,85 +283,71 @@ export default function MaxWidthDialog({ data }: Props) {
             <hr />
           </Box>
 
-          <Box display={"flex"}>
-            <Box>
-              <Typography mt={2} mb={2}>
-                Локација за преземање нарачка:
-              </Typography>
-              <Typography mt={2} mb={2}>
+          <Box textAlign={"center"}>
+            <Typography mt={2} mb={2}>
+              Локација за преземање нарачка:
+            </Typography>
+            {/* <Typography mt={2} mb={2}>
                 300 м одалечено од тебе
-              </Typography>
-            </Box>
-            <Box>
-              <GoogleMaps />
-            </Box>
+              </Typography> */}
+          </Box>
+          <Box display={"flex"} justifyContent={"center"}>
+            <GoogleMaps />
           </Box>
 
           <Box mt={2}>
             <hr />
           </Box>
 
-          <Box>
-            <Box mt={2} mb={2}>
-              <Typography>Што кажаа другите за "{data.name}":</Typography>
-            </Box>
-            <Box display={"flex"}>
-              <Box>
-                <img src="./img/CardMenuPage/Ellipse 7 (1).png" alt="img" />
-              </Box>
-              <Box ml={2}>
-                <Box display={"flex"}>
-                  <Box mr={1}>
-                    <Typography variant="body2">01.11.2022</Typography>
-                  </Box>
-                  <Box mr={16}>
-                    <Typography variant="body2">Сања Г.</Typography>
-                  </Box>
-                  <Box>
-                    <Rating name="read-only" value={value} readOnly />
-                  </Box>
-                </Box>
-                <Typography variant="body2">
-                  Одличен вкус!Доставата кога би била во поадекватно пакување,
-                  како би се задржала и топлината би било врв.
-                </Typography>
-              </Box>
-            </Box>
+          <Box mt={2} mb={2} textAlign={"center"}>
+            <Typography>Што кажаа другите за "{data.name}":</Typography>
+          </Box>
 
-            <Box display={"flex"} mt={2}>
-              <Box>
-                <img src="./img/CardMenuPage/Ellipse 8.png" alt="img" />
-              </Box>
-              <Box ml={2}>
-                <Box display={"flex"}>
-                  <Box mr={1}>
-                    <Typography variant="body2">02.09.2022</Typography>
-                  </Box>
-                  <Box mr={16}>
-                    <Typography variant="body2">Горан Г.</Typography>
-                  </Box>
-                  <Box>
-                    <Rating name="read-only" value={value} readOnly />
-                  </Box>
-                </Box>
-                <Typography variant="body2">
-                  За мој вкус презачинето беше! Доколку би имало опција да се
-                  корегира тоа со напомена од моја страна, дефинитивно би
-                  порачал пак.
-                </Typography>
-                <Box display={"flex"} alignItems={"end"} justifyContent={"end"}>
-                  <Link href="#" underline="hover">
-                    {/* Погледни ги сите */}
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
+          <Box>
+            <img src="./img/CardMenuPage/Ellipse 7 (1).png" alt="img" />
+          </Box>
+
+          <Box mr={1} mt={2}>
+            <Typography variant="body2">01.11.2022</Typography>
+          </Box>
+          <Box mr={16}>
+            <Typography variant="body2">Сања Г.</Typography>
+          </Box>
+          <Box>
+            <Rating name="read-only" value={value} readOnly />
+          </Box>
+
+          <Typography variant="body2">
+            Одличен вкус!Доставата кога би била во поадекватно пакување, како би
+            се задржала и топлината би било врв.
+          </Typography>
+
+          <Box>
+            <img src="./img/CardMenuPage/Ellipse 8.png" alt="img" />
+          </Box>
+
+          <Box mr={1}>
+            <Typography variant="body2">02.09.2022</Typography>
+          </Box>
+          <Box mr={16}>
+            <Typography variant="body2">Горан Г.</Typography>
+          </Box>
+          <Box>
+            <Rating name="read-only" value={value} readOnly />
+          </Box>
+          {/* </Box> */}
+          <Typography variant="body2">
+            За мој вкус презачинето беше! Доколку би имало опција да се корегира
+            тоа со напомена од моја страна, дефинитивно би порачал пак.
+          </Typography>
+          <Box display={"flex"} alignItems={"end"} justifyContent={"end"}>
+            <Link href="#" underline="hover">
+              {/* Погледни ги сите */}
+            </Link>
           </Box>
 
           <Box bgcolor={"#FFF6ED"} mt={3}>
-            <Box>
-              {/* <Typography>Повеќе од </Typography> */}
-            </Box>
+            <Box>{/* <Typography>Повеќе од </Typography> */}</Box>
             <Box display={"flex"} alignItems={"end"} justifyContent={"end"}>
               {/* <Link href="#" underline="hover">
                 Погледни ги сите

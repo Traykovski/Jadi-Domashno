@@ -10,13 +10,14 @@ import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
+  // borderRadius: theme.shape.borderRadius,
+  // backgroundColor: alpha(theme.palette.common.white, 0.15),
+  // "&:hover": {
+  //   // backgroundColor: alpha(theme.palette.common.white, 0.25),
+  // },
   marginLeft: 0,
   width: "100%",
+  height: '35px',
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
@@ -31,6 +32,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -74,8 +76,8 @@ export default function SearchAppBar({ setSearchTerm, value }: Props) {
 
   return (
     <>
-      <Search>
-        <SearchIconWrapper>
+      <Search sx={{backgroundColor: "white", color:"black", borderRadius: "20px"}} >
+        <SearchIconWrapper >
           <SearchIcon />
         </SearchIconWrapper>
         <StyledInputBase
@@ -85,6 +87,7 @@ export default function SearchAppBar({ setSearchTerm, value }: Props) {
           inputProps={{ "aria-label": "search" }}
           className="search-bar"
           onChange={handleFilteredMenu}
+          
         />
       </Search>
       {filteredMenu.length !== 0 && (

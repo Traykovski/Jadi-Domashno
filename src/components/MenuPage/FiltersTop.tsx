@@ -14,9 +14,9 @@ export default function FiltersTop({ handleSetMeal }: Props) {
   const [selectedMealType] = useState<string>("");
 
   return (
-    <Box className="slider-container">
+    <Box className="slider-container" sx={{}}>
       <Box className="center slider" mt={6} mb={3}>
-        <Box className="center" >
+        <Box className="center">
           <Box
             mr={3}
             component={motion.div}

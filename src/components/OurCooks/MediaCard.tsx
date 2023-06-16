@@ -12,8 +12,6 @@ import VerifiedIcon from "@mui/icons-material/Verified";
 import { CooksInterface } from "../../context/cooksContext";
 import { motion } from "framer-motion";
 
-
-
 interface Props {
   card: CooksInterface;
 }
@@ -24,10 +22,17 @@ export default function MediaCard({ card }: Props) {
       <Card
         sx={{
           maxWidth: 345,
-          borderTopLeftRadius: "10px",
-          borderTopRightRadius: "10px",
-          // display: "flex",
+          height: 360,
+          borderRadius: "15px",
+          overflow: "auto",
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+          "-ms-overflow-style": "none", /* IE and Edge */
+          "scrollbar-width": "none", /* Firefox */
         }}
+       
+        
         component={motion.div}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
@@ -43,7 +48,6 @@ export default function MediaCard({ card }: Props) {
           }}
         >
           <VerifiedIcon fontSize="large" />
-          
         </Box>
 
         <CardContent sx={{ backgroundColor: "#FFF2E2" }} className="rounded">
@@ -71,8 +75,7 @@ export default function MediaCard({ card }: Props) {
                 </Stack>
 
                 <Box>
-                  <Typography variant="body2" mt={1} ml={5}>
-                   
+                  <Typography variant="body2" mt={1} ml={4}>
                     <img src={card.icon} alt="home-png" /> 300 м
                   </Typography>
                 </Box>

@@ -44,7 +44,8 @@ export const Provider = ({ children }: Props) => {
   const [filteredName, setFilteredName] = useState<MenuInterface[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/menu")
+    // fetch("http://localhost:8000/menu")
+    fetch("https://jadi-domashno-json.onrender.com/menu")
       .then((res) => {
         return res.json();
       })

@@ -14,7 +14,7 @@ interface Props {
   isActive: boolean;
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   selectedValue: string;
-  // setSelectedValue: any;
+
   delivery: string;
   handleChangeDelivery: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleChangeAvailable: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -50,11 +50,18 @@ export default function FiltersLeft({
       <Paper
         sx={{
           paddingLeft: "20px",
-          paddingRight: "20px",
+          paddingRight: {
+            md: "20px",
+          },
           marginBottom: "20px",
-          marginLeft: "10px",
+
           paddingTop: "10px",
           backgroundColor: "#FFF2E2",
+          width: {
+            xs: "94.8%",
+            sm: "97%",
+            md: "100%",
+          },
         }}
       >
         <DropDownMenu />
@@ -122,6 +129,10 @@ export default function FiltersLeft({
               aria-labelledby="range-slider"
               sx={{
                 color: "#f1592a",
+                width: {
+                  xs: "97%",
+                  md: "100%",
+                },
               }}
             />
           </Box>
@@ -150,9 +161,7 @@ export default function FiltersLeft({
                   variant="caption"
                   display={"block"}
                   color="#fe724d"
-                  // className={` ${active === "1" ? "bg-active" : ""}`}
                   onClick={() => handleClick("1")}
-                  // onClick={() => handleClick("1")}
                 >
                   Јатки
                 </Typography>

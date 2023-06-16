@@ -36,7 +36,8 @@ export const Provider = ({ children }: Props) => {
   const [cooks, setCooks] = useState<CooksInterface[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/cooks")
+    // fetch("http://localhost:8000/cooks")
+    fetch("https://jadi-domashno-json.onrender.com/cooks")
       .then((res) => {
         return res.json();
       })

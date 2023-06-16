@@ -43,7 +43,7 @@ export default function MenuPage() {
         setFilteredMeal(menu.filter((n) => n.name === meal));
         // setMeal(menu)
 
-        console.log(`meal ${filteredMeal}`);
+        // console.log(`meal ${filteredMeal}`);
       }
 
       // filter by available
@@ -78,7 +78,7 @@ export default function MenuPage() {
       if (delivery === "yes") {
         setFilteredMeal(menu.filter((e) => e.delivery === "yes"));
 
-        console.log(filteredMeal);
+        // console.log(filteredMeal);
       }
       if (delivery === "no") {
         setFilteredMeal(menu.filter((e) => e.delivery === "no"));
@@ -95,6 +95,11 @@ export default function MenuPage() {
       meal,
     ]
   );
+
+  // useEffect(() => {
+  //   filterAvailable();
+  //   // eslint-disable-next-line
+  // }, [selectedAvailable])
 
   // filters by type of meal
   const handleSetMeal = (meal: string): void => {
@@ -169,19 +174,13 @@ export default function MenuPage() {
         whileInView={"onscreen"}
         transition={{ staggerChildren: 1 }}
       >
-        <Box
-          ml={4}
-          mr={4}
-          mt={14}
-          component={motion.div}
-          variants={inputButtonAnimate}
-        >
+        <Box component={motion.div} variants={inputButtonAnimate}>
           <Box mb={8} pt={8} textAlign={"center"}>
             <Typography
               variant="h5"
               fontFamily={"Bad Script"}
               fontWeight={400}
-              fontSize={30}
+              fontSize={36}
               className="line"
             >
               Мени
@@ -197,10 +196,12 @@ export default function MenuPage() {
           />
         </Box>
 
-        <Grid container mt={3} ml={3}>
+        <Grid container mt={3}  >
           <Grid
             item
-            xs={2}
+            xs={12}
+            // sm={6}
+            md={2}
             component={motion.div}
             variants={inputButtonAnimate}
           >
@@ -223,7 +224,9 @@ export default function MenuPage() {
 
           <Grid
             item
-            xs={10}
+            xs={12}
+            // sm={6}
+            md={10}
             component={motion.div}
             variants={inputButtonAnimate}
           >

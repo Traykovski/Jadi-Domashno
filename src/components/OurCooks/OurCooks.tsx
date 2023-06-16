@@ -1,32 +1,26 @@
 import React, { useContext } from "react";
-import { Box, Container, Typography, Grid, Stack, Button } from "@mui/material";
+import { Box, Container, Typography, Grid, Button } from "@mui/material";
 
 import MediaCard from "./MediaCard";
 
 import { Context } from "../../context/cooksContext";
 import { motion } from "framer-motion";
 
-const backgroundImageAnimation = {
-  offscreen: { opacity: 0 },
+const inputButtonAnimate = {
+  offscreen: { x: -900, opacity: 0 },
   onscreen: {
     opacity: 1,
+    x: 0,
+    scale: 1,
+    transition: { duration: 7, type: "spring" },
   },
 };
 
 export default function OurCooks() {
   const { cooks } = useContext(Context);
 
- 
-
   return (
-    <Container
-      component={motion.div}
-      variants={backgroundImageAnimation}
-      initial={"offscreen"}
-      // animate={"onscreen"}
-      whileInView={"onscreen"}
-      viewport={{ once: false, amount: 1 }}
-    >
+    <Container component={motion.div} variants={inputButtonAnimate}>
       <Box>
         <Typography
           variant="subtitle2"
@@ -45,8 +39,13 @@ export default function OurCooks() {
       <Grid container>
         {cooks.map((card) => {
           return (
-            <Grid item xs={4} key={card.id}>
-              <Box mr={4} component={motion.div}>
+            <Grid item xs={12} md={4} key={card.id}>
+              <Box
+                display={"flex"}
+                alignItems={"center"}
+                justifyContent={"center"}
+                mb={6}
+              >
                 <MediaCard card={card} />
               </Box>
             </Grid>
@@ -54,28 +53,22 @@ export default function OurCooks() {
         })}
       </Grid>
 
-      <Stack>
-        <Box marginBottom={18} mt={8} textAlign={"center"}>
-          <Button
-            variant="contained"
-            color="warning"
-            size="large"
-            sx={{
-              borderRadius: "20px",
-              backgroundColor: "#FE724D",
-              marginTop: "10px",
-              width: "220px",
-              textTransform: "capitalize",
-            }}
-            component={motion.div}
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            Кон готвачи
-          </Button>
-        </Box>
-      </Stack>
+      <Box marginBottom={18} mt={8} textAlign={"center"}>
+        <Button
+          variant="contained"
+          color="warning"
+          size="large"
+          sx={{
+            borderRadius: "20px",
+            backgroundColor: "#FE724D",
+            marginTop: "10px",
+            width: "220px",
+            textTransform: "capitalize",
+          }}
+        >
+          Кон готвачи
+        </Button>
+      </Box>
     </Container>
   );
 }

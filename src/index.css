@@ -12,7 +12,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #FFF8F0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  
 }
 
 code {
@@ -22,3 +23,5 @@ code {
 img {
   max-width: 100%;
 }
+
+

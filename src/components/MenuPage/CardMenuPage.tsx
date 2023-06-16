@@ -3,12 +3,10 @@ import {
   Button,
   CardActions,
   Rating,
-  Stack,
   Typography,
   Card,
   Avatar,
 } from "@mui/material";
-
 
 import MaxWidthDialog from "./MaxWidthDialog";
 import { MenuInterface } from "../../context/menuContext";
@@ -24,7 +22,17 @@ export default function CardMenuPage({ data }: Props) {
     <>
       <Card
         sx={{
-          maxWidth: 360,
+          width: {
+            xs: "95%",
+            sm: "95%",
+            md: "85%",
+          },
+          flexShrink: 0,
+
+          marginBottom: {
+            xs: 4,
+            md: 6,
+          },
           borderTopLeftRadius: "17px",
           borderTopRightRadius: "17px",
           borderBottomLeftRadius: "20%",
@@ -40,19 +48,18 @@ export default function CardMenuPage({ data }: Props) {
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <MaxWidthDialog data={data} />
-        <Box></Box>
-        <Box sx={{ backgroundColor: "#FFF2E2" }} className="rounded2">
-          <Box display={"flex"} className="img-card">
+
+        <Box
+          sx={{ backgroundColor: "#FFF2E2", flexShrink: 0 }}
+          className="rounded2"
+        >
+          <Box display={"flex"} className="img-card" flexShrink={0}>
             <Box>
               <Link to={`/cook-details/${data.cookId}`}>
                 <Avatar
                   alt="cook"
                   src={data.cook_avatar}
                   sx={{ width: 100, height: 100 }}
-                  component={motion.div}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 />
               </Link>
             </Box>
@@ -72,25 +79,20 @@ export default function CardMenuPage({ data }: Props) {
               </Box>
 
               <Box mt={1} className="rounded">
-                <Stack spacing={1} ml={2}>
-                  <Rating
-                    name="half-rating"
-                    size="small"
-                    sx={{ color: "#F1592A" }}
-                    defaultValue={data.reviews}
-                    precision={0.5}
-                    readOnly
-                  />
-                </Stack>
-
-                <Typography variant="body2" mt={1} ml={5}></Typography>
+                <Rating
+                  name="half-rating"
+                  size="small"
+                  sx={{ color: "#F1592A" }}
+                  defaultValue={data.reviews}
+                  precision={0.5}
+                  readOnly
+                />
               </Box>
               <Box display={"flex"}>
                 <Box
                   display={"flex"}
                   alignItems={"center"}
                   justifyContent={"center"}
-                  pl={2}
                 >
                   <img src="./img/Card/home.png" alt="house-png" />
                   <Typography>- 300 м</Typography>
