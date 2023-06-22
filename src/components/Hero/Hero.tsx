@@ -5,11 +5,13 @@ import {
   Typography,
   Button,
   TextField,
+  Backdrop,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import "@fontsource/roboto/400.css";
 import { motion } from "framer-motion";
+import CircularProgress from '@mui/material/CircularProgress';
 
 type BannerType = {
   title: string;
@@ -52,16 +54,57 @@ const tavceGravceAnimation = {
 
 export default function Hero() {
   const [data, setData] = useState<BannerType>();
+  const [error, setError] = useState<any>(null);
+  const isLoading = true;
+
+  // useEffect(() => {
+  //   fetch("https://jadi-domashno-json.onrender.com/banner_content")
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //       setData(data);
+  //     });
+  // }, []);
 
   useEffect(() => {
-    fetch("https://jadi-domashno-json.onrender.com/banner_content")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
+    
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`https://jadi-domashno-json.onrender.com/banner_content`);
+        
+            if (!response.ok) {
+              throw new Error("Something went wrong.");
+            }
+            const data = await response.json();
+            setData(data);
+      } catch (error) {
+        setError(error);
+      }
+      
+    };
+    fetchData();
+  }, [data]);
+
+  if (error) {
+    return (
+      <Box marginTop={20}>
+        <Typography variant="h2" color="error">
+          Error: {error.message}
+        </Typography>
+      </Box>
+    );
+  }
+  if (!data) {
+    return (
+      <Backdrop
+      open={isLoading}
+      sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+    >
+      <CircularProgress color="inherit" size={150} />
+    </Backdrop>
+    );
+  }
 
   return (
     <>
