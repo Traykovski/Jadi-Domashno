@@ -99,9 +99,12 @@ export default function Hero() {
     return (
       <Backdrop
       open={isLoading}
-      sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+      sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, flexDirection: "column" }}
     >
       <CircularProgress color="inherit" size={150} />
+      <Typography variant="h4">
+          The server is running slow.Please wait!
+        </Typography>
     </Backdrop>
     );
   }
