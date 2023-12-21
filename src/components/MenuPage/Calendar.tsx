@@ -33,7 +33,7 @@ export default function Calendar() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/orders")
-    fetch("https://jadi-domashno-json.onrender.com/orders")
+    fetch("https://jadi-domashno.onrender.com/orders")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

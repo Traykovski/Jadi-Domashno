@@ -13,7 +13,7 @@ export default function ThankUAndWelcome() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/thank_u_and_welcome")
-    fetch("https://jadi-domashno-json.onrender.com/thank_u_and_welcome")
+    fetch("https://jadi-domashno.onrender.com/thank_u_and_welcome")
       .then((res) => {
         return res.json();
       })

@@ -21,7 +21,7 @@ export default function OurValues() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/our_values")
-    fetch("https://jadi-domashno-json.onrender.com/our_values")
+    fetch("https://jadi-domashno.onrender.com/our_values")
       .then((res) => {
         return res.json();
       })

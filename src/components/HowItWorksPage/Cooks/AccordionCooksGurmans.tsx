@@ -27,7 +27,7 @@ export default function AccordionCooksGurmans() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/faq")
-    fetch("https://jadi-domashno-json.onrender.com/faq")
+    fetch("https://jadi-domashno.onrender.com/faq")
       .then((res) => {
         return res.json();
       })

@@ -13,7 +13,7 @@ export default function CooksCriteria() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/cooks-criteria")
-    fetch("https://jadi-domashno-json.onrender.com/cooks-criteria")
+    fetch("https://jadi-domashno.onrender.com/cooks-criteria")
       .then((res) => {
         return res.json();
       })

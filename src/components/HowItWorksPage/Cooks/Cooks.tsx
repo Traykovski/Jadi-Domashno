@@ -14,7 +14,7 @@ export default function Cooks() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/how_to_become_cook")
-    fetch("https://jadi-domashno-json.onrender.com/how_to_become_cook")
+    fetch("https://jadi-domashno.onrender.com/how_to_become_cook")
       .then((res) => {
         return res.json();
       })
@@ -25,7 +25,7 @@ export default function Cooks() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/why_to_become_a_cook")
-    fetch("https://jadi-domashno-json.onrender.com/why_to_become_a_cook")
+    fetch("https://jadi-domashno.onrender.com/why_to_become_a_cook")
       .then((res) => {
         return res.json();
       })

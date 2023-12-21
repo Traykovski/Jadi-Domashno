@@ -25,7 +25,7 @@ export default function CookDetailsPage() {
 
   useEffect(() => {
     // fetch(`http://localhost:8000/cooks/${id}`)
-    fetch(`https://jadi-domashno-json.onrender.com/cooks/${id}`)
+    fetch(`https://jadi-domashno.onrender.com/cooks/${id}`)
       .then((res) => res.json())
       .then((data) => setCookData(data))
       .catch((err) => console.log("Error", err));

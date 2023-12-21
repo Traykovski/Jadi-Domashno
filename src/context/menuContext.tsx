@@ -45,7 +45,7 @@ export const Provider = ({ children }: Props) => {
 
   useEffect(() => {
     // fetch("http://localhost:8000/menu")
-    fetch("https://jadi-domashno-json.onrender.com/menu")
+    fetch("https://jadi-domashno.onrender.com/menu")
       .then((res) => {
         return res.json();
       })

@@ -11,7 +11,7 @@ import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import "@fontsource/roboto/400.css";
 import { motion } from "framer-motion";
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from "@mui/material/CircularProgress";
 
 type BannerType = {
   title: string;
@@ -68,20 +68,20 @@ export default function Hero() {
   // }, []);
 
   useEffect(() => {
-    
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://jadi-domashno-json.onrender.com/banner_content`);
-        
-            if (!response.ok) {
-              throw new Error("Something went wrong.");
-            }
-            const data = await response.json();
-            setData(data);
+        const response = await fetch(
+          `https://jadi-domashno.onrender.com/banner_content`
+        );
+
+        if (!response.ok) {
+          throw new Error("Something went wrong.");
+        }
+        const data = await response.json();
+        setData(data);
       } catch (error) {
         setError(error);
       }
-      
     };
     fetchData();
   }, [data]);
@@ -98,14 +98,18 @@ export default function Hero() {
   if (!data) {
     return (
       <Backdrop
-      open={isLoading}
-      sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, flexDirection: "column" }}
-    >
-      <CircularProgress color="inherit" size={150} />
-      <Typography variant="h4">
+        open={isLoading}
+        sx={{
+          color: "#fff",
+          zIndex: (theme) => theme.zIndex.drawer + 1,
+          flexDirection: "column",
+        }}
+      >
+        <CircularProgress color="inherit" size={150} />
+        <Typography variant="h4">
           The server is running slow.Please wait!
         </Typography>
-    </Backdrop>
+      </Backdrop>
     );
   }
 

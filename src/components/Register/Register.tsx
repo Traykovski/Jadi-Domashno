@@ -21,7 +21,7 @@ export default function Register() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/register")
-    fetch("https://jadi-domashno-json.onrender.com/register")
+    fetch("https://jadi-domashno.onrender.com/register")
       .then((res) => {
         return res.json();
       })

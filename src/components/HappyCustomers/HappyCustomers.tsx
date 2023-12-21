@@ -18,7 +18,7 @@ export default function HappyCustomers() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/customers")
-    fetch("https://jadi-domashno-json.onrender.com/customers")
+    fetch("https://jadi-domashno.onrender.com/customers")
       .then((res) => {
         return res.json();
       })

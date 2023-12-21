@@ -17,7 +17,7 @@ export default function Family() {
 
   useEffect(() => {
     // fetch("http://localhost:8000/family")
-    fetch("https://jadi-domashno-json.onrender.com/family")
+    fetch("https://jadi-domashno.onrender.com/family")
       .then((res) => {
         return res.json();
       })
